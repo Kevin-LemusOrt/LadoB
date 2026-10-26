@@ -1,0 +1,315 @@
+
+/* ========================================
+   LADO B — PÁGINA DE INICIO
+   ======================================== */
+
+/* Presentación principal */
+.divheader {
+    position: relative;
+    overflow: hidden;
+    min-height: 380px;
+    background-color: var(--color-superficie);
+}
+
+.headerImg {
+    width: 100%;
+    height: 380px;
+}
+
+.headerImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Capa de texto sobre la imagen principal */
+.divheader #nosotros {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    padding: 8%;
+    background: linear-gradient(
+        90deg,
+        rgba(21, 21, 21, 0.95),
+        rgba(21, 21, 21, 0.60),
+        rgba(21, 21, 21, 0.10)
+    );
+}
+
+.textoHeader {
+    max-width: 620px;
+}
+
+.textoHeader h1 {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    margin-bottom: 1rem;
+}
+
+.textoHeader p {
+    max-width: 550px;
+}
+
+/* Secciones */
+#presentacion,
+#bandas,
+#albumesDestacados,
+#descubrirMas {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#bandas h2,
+#albumesDestacados h2,
+#descubrirMas h2 {
+    margin-bottom: 0.75rem;
+}
+
+/* Etiqueta pequeña de sección */
+.etiquetaSeccion {
+    display: inline-block;
+    margin-bottom: 0.65rem;
+    color: var(--color-verde);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+/* Tarjetas de bandas y álbumes */
+.bandasElegidas,
+.albumesElegidos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.banda,
+.album {
+    position: relative;
+    overflow: hidden;
+    min-width: 0;
+    min-height: 260px;
+    background-color: var(--color-superficie);
+    border-radius: var(--radio-tarjeta);
+}
+
+/* Imágenes de las tarjetas */
+.banda > img,
+.album > img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: var(--radio-tarjeta);
+    transition:
+        transform 350ms ease,
+        filter 350ms ease;
+}
+
+/* Texto superpuesto en las tarjetas */
+.textoBanda,
+.textoAlbum {
+    position: absolute;
+    inset: auto 0 0;
+    padding: 1.5rem;
+    background: linear-gradient(
+        transparent,
+        rgba(21, 21, 21, 0.92) 40%,
+        rgba(21, 21, 21, 0.98)
+    );
+}
+
+.textoBanda span,
+.textoAlbum span {
+    color: var(--color-verde);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.textoBanda h3,
+.textoAlbum h3 {
+    margin-top: 0.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.textoBanda p,
+.textoAlbum p {
+    margin-bottom: 0.75rem;
+}
+
+/* Zoom discreto al pasar el cursor */
+.banda:hover > img,
+.album:hover > img {
+    transform: scale(1.04);
+    filter: brightness(1.12);
+}
+
+.textoBanda a,
+.textoAlbum a,
+.textoCarrusel a {
+    display: inline-block;
+    color: var(--color-texto);
+    font-weight: 700;
+    transition: color var(--transicion);
+}
+
+.textoBanda a:hover,
+.textoAlbum a:hover,
+.textoCarrusel a:hover {
+    color: var(--color-verde);
+}
+
+/* Carrusel de descubrimiento */
+#carruselBandas {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.bandaCarrusel {
+    position: relative;
+    min-height: 360px;
+    overflow: hidden;
+    border-radius: var(--radio-tarjeta);
+    background-color: var(--color-superficie);
+}
+
+.bandaCarrusel > img {
+    display: block;
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    filter: brightness(0.78);
+    transition:
+        transform 400ms ease,
+        filter 400ms ease;
+}
+
+/* El texto vive dentro de la imagen */
+.textoCarrusel {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: clamp(1.5rem, 5vw, 3.5rem);
+    background: linear-gradient(
+        90deg,
+        rgba(21, 21, 21, 0.93),
+        rgba(21, 21, 21, 0.58) 58%,
+        rgba(21, 21, 21, 0.10)
+    );
+}
+
+.textoCarrusel > span {
+    color: var(--color-verde);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.textoCarrusel h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.75rem;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.textoCarrusel p {
+    max-width: 520px;
+    color: var(--color-texto);
+}
+
+.bandaCarrusel:hover > img {
+    transform: scale(1.025);
+    filter: brightness(0.95);
+}
+
+/* Indicadores del carrusel */
+#carruselBandas .carousel-indicators {
+    margin-bottom: 0.75rem;
+}
+
+#carruselBandas .carousel-indicators [data-bs-target] {
+    width: 24px;
+    height: 3px;
+    border: 0;
+    background-color: var(--color-texto-secundario);
+}
+
+#carruselBandas .carousel-indicators .active {
+    background-color: var(--color-verde);
+}
+
+/* Pie de página */
+footer {
+    margin-top: 2rem;
+    border-top: 1px solid var(--color-borde);
+    background-color: var(--color-fondo);
+}
+
+/* Adaptación para móviles */
+@media (max-width: 768px) {
+    .divheader,
+    .headerImg {
+        min-height: 320px;
+        height: 320px;
+    }
+
+    .divheader #nosotros {
+        padding: 1.5rem;
+        background: linear-gradient(
+            90deg,
+            rgba(21, 21, 21, 0.92),
+            rgba(21, 21, 21, 0.55)
+        );
+    }
+
+    .bandasElegidas,
+    .albumesElegidos {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    .banda > img,
+    .album > img {
+        height: 280px;
+    }
+
+    .bandaCarrusel,
+    .bandaCarrusel > img {
+        min-height: 360px;
+        height: 360px;
+    }
+
+    .textoCarrusel {
+        padding: 1.5rem;
+        background: linear-gradient(
+            0deg,
+            rgba(21, 21, 21, 0.97),
+            rgba(21, 21, 21, 0.45)
+        );
+    }
+
+    #carruselBandas .carousel-control-prev,
+    #carruselBandas .carousel-control-next {
+        width: 12%;
+    }
+}
+
+/* Móviles pequeños */
+@media (max-width: 400px) {
+    .banda > img,
+    .album > img {
+        height: 250px;
+    }
+
+    .textoBanda,
+    .textoAlbum {
+        padding: 1rem;
+    }
+}

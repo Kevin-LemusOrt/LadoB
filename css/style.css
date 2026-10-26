@@ -1,0 +1,136 @@
+/* ========================================
+   LADO B — IDENTIDAD GLOBAL
+   ======================================== */
+
+:root {
+    /* Paleta principal */
+    --color-fondo: #151515;
+    --color-superficie: #292929;
+    --color-rojo: #8F3438;
+    --color-verde: #B8FF3B;
+    --color-texto: #E7E1D8;
+    --color-texto-secundario: #AAA59D;
+    --color-borde: #393939;
+
+    /* Tipografía y formas */
+    --fuente-principal: Arial, Helvetica, sans-serif;
+    --radio-tarjeta: 10px;
+
+    /* Transiciones */
+    --transicion: 250ms ease;
+}
+
+/* Reinicio básico */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: var(--fuente-principal);
+    line-height: 1.6;
+}
+
+/* Textos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-texto);
+    line-height: 1.2;
+}
+
+p {
+    color: var(--color-texto-secundario);
+}
+
+/* Enlaces generales */
+a {
+    color: var(--color-texto);
+    text-decoration: none;
+    transition: color var(--transicion);
+}
+
+a:hover {
+    color: var(--color-verde);
+}
+
+/* Navegación Bootstrap */
+.navbar {
+    background-color: var(--color-fondo) !important;
+    border-bottom: 1px solid var(--color-borde);
+}
+
+.navbar-brand {
+    color: var(--color-texto) !important;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    color: var(--color-texto-secundario) !important;
+    transition: color var(--transicion);
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--color-verde) !important;
+}
+
+/* Menús desplegables */
+.dropdown-menu {
+    background-color: var(--color-superficie);
+    border: 1px solid var(--color-borde);
+}
+
+.dropdown-item {
+    color: var(--color-texto);
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: #383838;
+    color: var(--color-verde);
+}
+
+/* Botones globales */
+.btn-ladob {
+    background-color: var(--color-rojo);
+    color: var(--color-texto);
+    border: 1px solid var(--color-rojo);
+    transition:
+        background-color var(--transicion),
+        color var(--transicion);
+}
+
+.btn-ladob:hover {
+    background-color: var(--color-verde);
+    border-color: var(--color-verde);
+    color: var(--color-fondo);
+}
+
+/* Selección de texto */
+::selection {
+    background-color: var(--color-verde);
+    color: var(--color-fondo);
+}
+
+/* Accesibilidad: respetar la preferencia de menos movimiento */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

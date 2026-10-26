@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet">
     </head>
     <body>
 
@@ -42,7 +43,7 @@
 
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle"
-                                            href="#"
+                                            href="banda.html"
                                             role="button"
                                             data-bs-toggle="dropdown"
                                             aria-expanded="false">
@@ -70,7 +71,7 @@
 
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle"
-                                            href="#"
+                                            href="albumes.html"
                                             role="button"
                                             data-bs-toggle="dropdown"
                                             aria-expanded="false">
@@ -100,8 +101,24 @@
                     </nav>
                 </div>
 
-                <div class="divAlgo">
-                        
+                <div class="divheader">
+                        <div class="headerImg">
+                            <img src="assets/logoTemp.webp" alt="logo temporar de la pagina">
+                        </div>
+
+                        <section id="nosotros">
+                            <div class="textoHeader">
+                                <h1> Lado B </h1>
+                                <p>
+                                    Lado B es un pequeño espacio dedicado a descubrir musica de nicho o de no tanto nicho,
+                                    al explorar bandas y conocer mas de los que nos perminimos escuchar.
+                                </p>
+                                <p>
+                                    Es hora de salir de nuestra zona de confort y poder escuchar mas alla de lo que
+                                    nos conformamos 
+                                </p>
+                            </div>
+                        </section>
                 </div>
 
             </div>
@@ -111,7 +128,7 @@
 
             <section id="presentacion">
                 <div class="container py-5">
-                    <h1>Lado B</h1>
+                    <h2>Lado B</h2>
                     <p>
                         Un espacio dedicado a descubrir música alternativa,
                         explorar bandas y conocer las historias detrás de sus álbumes.
@@ -127,6 +144,170 @@
                     </p>
 
                 </div>
+
+                <div class="bandasElegidas">
+
+                    <div class="banda" id="banda1">
+                        <img src="assets/Meltt.webp" alt="Banda 1">
+
+                        <div class="textoBanda">
+                            <span>Su Sonido</span>
+                            <h3>Meltt</h3>
+                            <p>
+                                Psicodelia, melodías envolventes y atmósferas
+                                que parecen sacadas de un sueño.
+                            </p>
+                            <a href="banda.html?banda=meltt">Explorar banda</a>
+                        </div>
+                    </div>
+
+                    <div class="banda" id="banda2">
+                        <img src="assets/Odisseo.webp" alt="">
+
+                        <div class="textoBanda">
+                            <span>Su Sonido</span>
+                            <h3>Odisseo</h3>
+                            <p>
+                                Rock alternativo, sintetizadores y melodías
+                                cargadas de nostalgia e intensidad sentimental.
+                            </p>
+                            <a href="banda.html?banda=odisseo">Explorar banda</a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="container py-5" id="descubrirMas">
+                <div class="mb-4">
+                    <span class="etiquetaSeccion">SIGUE EXPLORANDO</span>
+                    <h2>Descubre mas</h2>
+                    <p>Un sonido nuevo puede llevarte a lugares inesperados</p>
+                </div>
+
+                <div class="carousel slide" id="carruselBandas">
+                    <div class="carousel-inner">
+
+                        <!-- Meltt -->
+                        <div class="carousel-item active">
+                            <div class="bandaCarrusel">
+                                <img src="assets/Meltt.webp" alt="Meltt">
+                                <div class="textoCarrusel">
+                                    <span>Su Sonido</span>
+                                    <h3>Meltt</h3>
+                                    <p>
+                                        Psicodelia, melodías envolventes y atmósferas
+                                        que parecen sacadas de un sueño.
+                                    </p>
+                                    <a href="banda.html?banda=meltt">Explorar banda</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Odisseo -->
+                        <div class="carousel-item">
+                            <div class="bandaCarrusel">
+                                <img src="assets/Odisseo.webp" alt="Odisseo">
+                                <div class="textoCarrusel">
+                                    <span>SU SONIDO</span>
+                                    <h3>Odisseo</h3>
+                                    <p>
+                                        Rock alternativo, sintetizadores y melodías
+                                        cargadas de nostalgia e intensidad sentimental.
+                                    </p>
+                                    <a href="banda.html?banda=odisseo">Explorar banda</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Serbia -->
+                        <div class="carousel-item">
+                            <div class="bandaCarrusel">
+                                <img src="assets/Serbia.webp" alt="Serbia">
+                                <div class="textoCarrusel">
+                                    <span>SU SONIDO</span>
+                                    <h3>Serbia</h3>
+                                    <p>
+                                        Rock alternativo de guitarras intensas,
+                                        emociones a flor de piel y una energía directa.
+                                    </p>
+                                    <a href="banda.html?banda=serbia">Explorar banda ↗</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ases Falso -->
+                        <div class="carousel-item">
+                            <div class="bandaCarrusel">
+                                <img src="assets/AsesFalsos.webp" alt="Ases Falsos">
+                                <div class="textoCarrusel">
+                                    <span>SU SONIDO</span>
+                                    <h3>Ases Falsos</h3>
+                                    <p>
+                                        Pop rock chileno con letras ingeniosas,
+                                        melodías pegadizas y una mirada crítica.
+                                    </p>
+                                    <a href="banda.html?banda=ases-falsos">Explorar banda ↗</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Los Mesoneros -->
+                        <div class="carousel-item">
+                            <div class="bandaCarrusel">
+                                <img src="assets/LosMesoneros.webp" alt="Los Mesoneros">
+                                <div class="textoCarrusel">
+                                    <span>SU SONIDO</span>
+                                    <h3>Los Mesoneros</h3>
+                                    <p>
+                                        Rock alternativo y pop rock con guitarras
+                                        melódicas, matices nostálgicos y energía.
+                                    </p>
+                                    <a href="banda.html?banda=los-mesoneros">Explorar banda ↗</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Controles -->
+
+                    <button class="carousel-control-prev" type="button"
+                        data-bs-target="#carruselBandas" data-bs-slide="prev"
+                        aria-label="Banda anterior">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button"
+                        data-bs-target="#carruselBandas" data-bs-slide="next"
+                        aria-label="Banda siguiente">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carruselBandas"
+                            data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Mostrar Meltt">
+                        </button>
+
+                        <button type="button" data-bs-target="#carruselBandas"
+                            data-bs-slide-to="1" aria-label="Mostrar Odisseo">
+                        </button>
+
+                        <button type="button" data-bs-target="#carruselBandas"
+                            data-bs-slide-to="2" aria-label="Mostrar Serbia">
+                        </button>
+
+                        <button type="button" data-bs-target="#carruselBandas"
+                            data-bs-slide-to="3" aria-label="Mostrar Ases Falsos">
+                        </button>
+
+                        <button type="button" data-bs-target="#carruselBandas"
+                            data-bs-slide-to="4" aria-label="Mostrar Los Mesoneros">
+                        </button>
+                    </div>
+
+                </div>
             </section>
 
             <section id="albumesDestacados">
@@ -135,6 +316,38 @@
                     <p>
                         Descubre álbumes que merecen una escucha y conoce qué hay detrás de ellos.
                     </p>
+
+                </div>
+
+                <div class="albumesElegidos">
+
+                    <div class="album" id="album1">
+                        <img src="assets/Albunes/pangea.webp" alt="Album pangea">
+
+                        <div class="textoAlbum">
+                            <span>Lo que Deja</span>
+                            <h3>Pangea</h3>
+                            <p>
+                                Una experiencia de melodías envolventes,
+                                emociones intensas y una atmósfera que permanece.
+                            </p>
+                            <a href="album.html?album=pangea">Descubrir álbum</a>
+                        </div>
+                    </div>
+
+                    <div class="album" id="album2">
+                        <img src="assets/Albunes/no_es_que_no_te_quiera.webp" alt="Album No es que no te quiera">
+
+                        <div class="textoAlbum">
+                            <span>Lo que Deja</span>
+                            <h3>No es que no te quiera</h3>
+                            <p>
+                                Una mirada a los desencuentros sentimentales,
+                                las contradicciones y aquello que cuesta expresar.
+                            </p>
+                            <a href="album.html?album=no-es-que-no-te-quiera">Descubrir álbum</a>
+                        </div>
+                    </div>
 
                 </div>
             </section>
