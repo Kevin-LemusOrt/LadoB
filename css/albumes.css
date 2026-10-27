@@ -1,0 +1,144 @@
+
+/* ========================================
+   LADO B — CATÁLOGO DE ÁLBUMES
+   ======================================== */
+
+#introduccionAlbumes {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.etiquetaSeccion {
+    color: var(--color-verde);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.coleccionBanda {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.encabezadoColeccion {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--color-borde);
+    padding-bottom: 0.75rem;
+}
+
+/* Tarjeta que contiene portada e información */
+.fichaAlbum {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    min-height: 380px;
+    padding: 2rem;
+    background-color: var(--color-superficie);
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio-tarjeta);
+}
+
+/* Álbumes pares: texto primero, portada después */
+.carousel-item:nth-child(even) .fichaAlbum {
+    flex-direction: row-reverse;
+}
+
+/* Área de portada y vinilo */
+.portadaVinilo {
+    position: relative;
+    isolation: isolate;
+    flex: 0 1 340px;
+    width: 100%;
+    max-width: 340px;
+    aspect-ratio: 1 / 1;
+}
+
+/* Disco detrás de la portada */
+.portadaVinilo::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 3%;
+    left: 3%;
+    width: 94%;
+    height: 94%;
+    border-radius: 50%;
+    background:
+        repeating-radial-gradient(
+            circle,
+            #393939 0 1px,
+            #101010 2px 4px
+        );
+    box-shadow: 0 0 18px #0008;
+    transition: transform 500ms ease;
+}
+
+/* Portada */
+.portadaVinilo img {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+    box-shadow: 0 8px 24px #0005;
+    transition: transform 500ms ease;
+}
+
+/* Hovers */
+/* Portada normal: se desplaza hacia la izquierda */
+.portadaVinilo:hover img {
+    transform: translateX(-15%) scale(.85) rotate(-15deg);
+}
+
+/* En álbumes pares, se desplaza hacia la derecha */
+.carousel-item:nth-child(even) .portadaVinilo:hover img {
+    transform: translateX(15%) scale(.85) rotate(15deg);
+}
+
+/* Revelar el vinilo */
+.portadaVinilo:hover::before {
+    transform: translateX(15%);
+}
+
+.carousel-item:nth-child(even) .portadaVinilo:hover::before {
+    transform: translateX(-15%);
+}
+
+/* Información del álbum */
+.informacionAlbum {
+    flex: 1;
+    min-width: 0;
+    max-width: 520px;
+}
+
+.informacionAlbum h3 {
+    margin-bottom: 1rem;
+}
+
+.datosAlbum {
+    color: var(--color-texto-secundario);
+}
+
+/* Diseño adaptable */
+@media (max-width: 767px) {
+    .fichaAlbum,
+    .carousel-item:nth-child(even) .fichaAlbum {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1.25rem;
+    }
+
+    .portadaVinilo {
+        flex: none;
+        width: min(100%, 300px);
+    }
+
+    .informacionAlbum {
+        width: 100%;
+        max-width: none;
+    }
+}

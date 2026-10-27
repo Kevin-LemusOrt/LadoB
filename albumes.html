@@ -6,9 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        <link href="css/albumes.css" rel="stylesheet">
     </head>
     <body>
 
+        <!-- Navegación -->
         <header>
             <div class="headerMain">
 
@@ -33,9 +35,7 @@
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                                     <li class="nav-item">
-                                        <a class="nav-link active"
-                                            aria-current="page"
-                                            href="index.html">
+                                        <a class="nav-link" href="index.html">
                                             Inicio
                                         </a>
                                     </li>
@@ -69,11 +69,12 @@
                                     </li>
 
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle"
+                                        <a class="nav-link dropdown-toggle active"
                                             href="albumes.html"
                                             role="button"
                                             data-bs-toggle="dropdown"
-                                            aria-expanded="false">
+                                            aria-expanded="false"
+                                            aria-current="page">
                                             Álbumes
                                         </a>
 
@@ -82,7 +83,19 @@
                                                 <a class="dropdown-item" href="albumes.html">Catálogo de álbumes</a>
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="albumes.html#destacados">Álbumes destacados</a>
+                                                <a class="dropdown-item" href="albumes.html#coleccionOdisseo">Odisseo</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="albumes.html#coleccionMeltt">Meltt</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="albumes.html#coleccionSerbia">Serbia</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="albumes.html#coleccionAsesFalsos">Ases Falsos</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="albumes.html#coleccionLosMesoneros">Los Mesoneros</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -100,53 +113,1000 @@
                     </nav>
                 </div>
 
-                <div class="divAlgo">
-                        
-                </div>
-
             </div>
+
         </header>
 
-        <main class="main">
+        <main>
 
-            <section id="presentacion">
-                <div class="container py-5">
-                    <h1>Lado B</h1>
-                    <p>
-                        Un espacio dedicado a descubrir música alternativa,
-                        explorar bandas y conocer las historias detrás de sus álbumes.
-                    </p>
-                </div>
+            <section id="introduccionAlbumes" class="container py-5">
+
+                <p class="etiquetaSeccion">Nuestra colección</p>
+
+                <h1>Álbumes</h1>
+
+                <p>
+                    Explora los álbumes de las bandas que forman parte de
+                    nuestra colección y descubre la música que hay detrás
+                    de cada portada.
+                </p>
+
             </section>
 
-            <section id="bandas">
-                <div class="container py-4">
-                    <h2>Explora las bandas</h2>
-                    <p>
-                        Conoce sus historias, su evolución musical y sus discos más representativos.
-                    </p>
+            <!-- COLECCIÓN DE ODISSEO -->
+            <section
+                class="coleccionBanda container py-4"
+                id="coleccionOdisseo"
+            >
+
+                <div class="encabezadoColeccion">
+                    <p class="etiquetaSeccion">Colección 01</p>
+                    <h2>Odisseo</h2>
+                </div>
+
+                <div
+                    id="carruselOdisseo"
+                    class="carousel slide"
+                    data-bs-interval="false"
+                >
+
+                    <div class="carousel-inner">
+
+                        <!-- Álbum 1 -->
+                        <div class="carousel-item active">
+
+                            <article class="fichaAlbum">
+
+                                <div class="portadaVinilo">
+                                    <img
+                                        src="assets/Albunes/Odisseo/SiYoSoy.webp"
+                                        alt="Portada del álbum Sí, Yo Soy de Odisseo"
+                                        class="portadaAlbum"
+                                    >
+                                </div>
+
+                                <div class="informacionAlbum">
+                                    <p class="etiquetaSeccion">Álbum seleccionado</p>
+
+                                    <h3>Sí, Yo Soy</h3>
+
+                                    <div class="datosAlbum">
+                                        <span>Odisseo</span>
+                                        <span>Año de lanzamiento</span>
+                                    </div>
+
+                                    <p>
+                                        Descripción del álbum pendiente.
+                                    </p>
+
+                                    <a
+                                        href="album.html?album=si-yo-soy"
+                                        class="btn btn-outline-light"
+                                    >
+                                        Explorar álbum
+                                    </a>
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                        <!-- Álbum 2 -->
+                        <div class="carousel-item">
+
+                            <article class="fichaAlbum">
+
+                                <div class="portadaVinilo">
+                                    <img
+                                        src="assets/Albunes/Odisseo/DiasDeFuego.webp"
+                                        alt="Portada del álbum Días de Fuego de Odisseo"
+                                        class="portadaAlbum"
+                                    >
+                                </div>
+
+                                <div class="informacionAlbum">
+                                    <p class="etiquetaSeccion">Álbum seleccionado</p>
+
+                                    <h3>Días de Fuego</h3>
+
+                                    <div class="datosAlbum">
+                                        <span>Odisseo</span>
+                                        <span>Año de lanzamiento</span>
+                                    </div>
+
+                                    <p>
+                                        Descripción del álbum pendiente.
+                                    </p>
+
+                                    <a
+                                        href="album.html?album=dias-de-fuego"
+                                        class="btn btn-outline-light"
+                                    >
+                                        Explorar álbum
+                                    </a>
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                        <!-- Album 3 -->
+                        <div class="carousel-item">
+
+                            <article class="fichaAlbum">
+
+                                <div class="portadaVinilo">
+                                    <img
+                                        src="assets/Albunes/Odisseo/CambioEstacional.webp"
+                                        alt="Portada del álbum Cambio Estacional de Odisseo"
+                                        class="portadaAlbum"
+                                    >
+                                </div>
+
+                                <div class="informacionAlbum">
+                                    <p class="etiquetaSeccion">Álbum seleccionado</p>
+
+                                    <h3>Cambio Estacional</h3>
+
+                                    <div class="datosAlbum">
+                                        <span>Odisseo</span>
+                                        <span>Año de lanzamiento</span>
+                                    </div>
+
+                                    <p>
+                                        Descripción del álbum pendiente.
+                                    </p>
+
+                                    <a
+                                        href="album.html?album=dias-de-fuego"
+                                        class="btn btn-outline-light"
+                                    >
+                                        Explorar álbum
+                                    </a>
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                        <!-- Album 4 -->
+                        <div class="carousel-item">
+
+                            <article class="fichaAlbum">
+
+                                <div class="portadaVinilo">
+                                    <img
+                                        src="assets/Albunes/Odisseo/GeneracionInmediata.webp"
+                                        alt="Portada del álbum Generacion Inmediata de Odisseo"
+                                        class="portadaAlbum"
+                                    >
+                                </div>
+
+                                <div class="informacionAlbum">
+                                    <p class="etiquetaSeccion">Álbum seleccionado</p>
+
+                                    <h3>Generacion Inmediata</h3>
+
+                                    <div class="datosAlbum">
+                                        <span>Odisseo</span>
+                                        <span>Año de lanzamiento</span>
+                                    </div>
+
+                                    <p>
+                                        Descripción del álbum pendiente.
+                                    </p>
+
+                                    <a
+                                        href="album.html?album=generacion-inmediata"
+                                        class="btn btn-outline-light"
+                                    >
+                                        Explorar álbum
+                                    </a>
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                        <!-- Album 4 -->
+                        <div class="carousel-item">
+
+                            <article class="fichaAlbum">
+
+                                <div class="portadaVinilo">
+                                    <img
+                                        src="assets/Albunes/Odisseo/TormentasInesperadas.webp"
+                                        alt="Portada del álbum Tormentas Inesperadas de Odisseo"
+                                        class="portadaAlbum"
+                                    >
+                                </div>
+
+                                <div class="informacionAlbum">
+                                    <p class="etiquetaSeccion">Álbum seleccionado</p>
+
+                                    <h3>Tormentas Inesperadas</h3>
+
+                                    <div class="datosAlbum">
+                                        <span>Odisseo</span>
+                                        <span>Año de lanzamiento</span>
+                                    </div>
+
+                                    <p>
+                                        Descripción del álbum pendiente.
+                                    </p>
+
+                                    <a
+                                        href="album.html?album=tormentas-inesperadas"
+                                        class="btn btn-outline-light"
+                                    >
+                                        Explorar álbum
+                                    </a>
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Controles del carrusel -->
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carruselOdisseo"
+                        data-bs-slide="prev"
+                        aria-label="Álbum anterior de Odisseo"
+                    >
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carruselOdisseo"
+                        data-bs-slide="next"
+                        aria-label="Siguiente álbum de Odisseo"
+                    >
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
 
                 </div>
+
             </section>
 
-            <section id="albumesDestacados">
-                <div class="container py-4">
-                    <h2>Álbumes destacados</h2>
-                    <p>
-                        Descubre álbumes que merecen una escucha y conoce qué hay detrás de ellos.
-                    </p>
+            <!-- COLECCIÓN DE MELTT -->
+            <section
+                class="coleccionBanda container py-4"
+                id="coleccionMeltt"
+            >
+
+                <div class="encabezadoColeccion">
+                    <p class="etiquetaSeccion">Colección 02</p>
+                    <h2>Meltt</h2>
+                </div>
+
+                <div
+                    id="carruselMeltt"
+                    class="carousel slide"
+                    data-bs-interval="false"
+                >
+                    <div class="carousel-inner">
+
+                        <!-- Album 1 -->
+                        <div class="carousel-item active">
+                            <article class="fichaAlbum">
+
+                                <div class="portadaVinilo">
+                                    <img src="assets/Albunes/Meltt/SwimSlowly.webp"
+                                        alt="Portada del album Swim Slowly de Meltt"
+                                        class="portadaAlbum">
+                                </div>
+
+                                <div class="informacionAlbum">
+                                    <p class="etiquetaSeccion">Álbum seleccionado</p>
+                                    <h3>Swim Slowly</h3>
+
+                                    <div class="datosAlbum">
+                                        <span>Meltt</span>
+                                        <span>Año de lanzamiento</span>
+                                    </div>
+
+                                    <p>Descripción del álbum pendiente.</p>
+
+                                    <a href="album.html?album=swim-slowly"
+                                        class="btn btn-outline-light">
+                                        Explorar álbum
+                                    </a>
+                                </div>
+
+                            </article>
+                        </div>
+
+                        <!-- Album 2 -->
+                        <div class="carousel-item">
+                            <article class="fichaAlbum">
+
+                                <div class="portadaVinilo">
+                                    <img src="assets/Albunes/Meltt/EternalEmbers.webp"
+                                        alt="Portada del album Eternal Embers de Meltt"
+                                        class="portadaAlbum">
+                                </div>
+
+                                <div class="informacionAlbum">
+                                    <p class="etiquetaSeccion">Álbum seleccionado</p>
+                                    <h3>Eternal Embers</h3>
+
+                                    <div class="datosAlbum">
+                                        <span>Meltt</span>
+                                        <span>Año de lanzamiento</span>
+                                    </div>
+
+                                    <p>Descripción del álbum pendiente.</p>
+
+                                    <a href="album.html?album=eternal-embers"
+                                        class="btn btn-outline-light">
+                                        Explorar álbum
+                                    </a>
+                                </div>
+
+                            </article>
+                        </div>
+
+                        <!-- Album 3 -->
+                        <div class="carousel-item">
+                            <article class="fichaAlbum">
+
+                                <div class="portadaVinilo">
+                                    <img src="assets/Albunes/Meltt/Pathways.webp"
+                                        alt="Portada del album Pathways de Meltt"
+                                        class="portadaAlbum">
+                                </div>
+
+                                <div class="informacionAlbum">
+                                    <p class="etiquetaSeccion">Álbum seleccionado</p>
+                                    <h3>Pathways</h3>
+
+                                    <div class="datosAlbum">
+                                        <span>Meltt</span>
+                                        <span>Año de lanzamiento</span>
+                                    </div>
+
+                                    <p>Descripción del álbum pendiente.</p>
+
+                                    <a href="album.html?album=pathways"
+                                        class="btn btn-outline-light">
+                                        Explorar álbum
+                                    </a>
+                                </div>
+
+                            </article>
+                        </div>
+
+                    </div>
+
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carruselMeltt"
+                        data-bs-slide="prev"
+                        aria-label="Álbum anterior de Meltt"
+                    >
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carruselMeltt"
+                        data-bs-slide="next"
+                        aria-label="Siguiente álbum de Meltt"
+                    >
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
 
                 </div>
+
+            </section>
+
+            <!-- COLECCIÓN DE SERBIA -->
+            <section
+                class="coleccionBanda container py-4"
+                id="coleccionSerbia"
+            >
+
+                <div class="encabezadoColeccion">
+                    <p class="etiquetaSeccion">Colección 03</p>
+                    <h2>Serbia</h2>
+                </div>
+
+                <div
+                    id="carruselSerbia"
+                    class="carousel slide"
+                    data-bs-interval="false"
+                >
+
+                    <div class="carousel-inner">
+
+                        <!-- Album 1 -->
+                        <div class="carousel-item active">
+                            <article class="fichaAlbum">
+
+                                <div class="portadaVinilo">
+                                    <img src="assets/Albunes/Serbia/SecretosDelSol.webp"
+                                        alt="Portada del Album Secretos Del Sol de Serbia"
+                                        class="portadaAlbum">
+                                </div>
+
+                                <div class="informacionAlbum">
+                                    <p class="etiquetaSeccion">Álbum seleccionado</p>
+                                    <h3>Secretos del Sol</h3>
+
+                                    <div class="datosAlbum">
+                                        <span>Serbia</span>
+                                        <span>Año de lanzamiento</span>
+                                    </div>
+
+                                    <p>Descripción del álbum pendiente.</p>
+
+                                    <a href="album.html?album=secretos-del-sol"
+                                        class="btn btn-outline-light">
+                                        Explorar álbum
+                                    </a>
+                                </div>
+
+                            </article>
+                        </div>
+
+                        <!-- Album 2 -->
+                        <div class="carousel-item">
+                            <article class="fichaAlbum">
+
+                                <div class="portadaVinilo">
+                                    <img src="assets/Albunes/Serbia/FinDelMundo.webp"
+                                        alt="Portada del Album Fin del Mundo de Serbia"
+                                        class="portadaAlbum">
+                                </div>
+
+                                <div class="informacionAlbum">
+                                    <p class="etiquetaSeccion">Álbum seleccionado</p>
+                                    <h3>Fin del Mundo</h3>
+
+                                    <div class="datosAlbum">
+                                        <span>Serbia</span>
+                                        <span>Año de lanzamiento</span>
+                                    </div>
+
+                                    <p>Descripción del álbum pendiente.</p>
+
+                                    <a href="album.html?album=fin-del-mundo"
+                                        class="btn btn-outline-light">
+                                        Explorar álbum
+                                    </a>
+                                </div>
+
+                            </article>
+                        </div>
+
+                        <!-- Album 3 -->
+                        <div class="carousel-item">
+                            <article class="fichaAlbum">
+
+                                <div class="portadaVinilo">
+                                    <img src="assets/Albunes/Serbia/Melodramatica.webp"
+                                        alt="Portada del Album Melodramatica de Serbia"
+                                        class="portadaAlbum">
+                                </div>
+
+                                <div class="informacionAlbum">
+                                    <p class="etiquetaSeccion">Álbum seleccionado</p>
+                                    <h3>Melodramatica</h3>
+
+                                    <div class="datosAlbum">
+                                        <span>Serbia</span>
+                                        <span>Año de lanzamiento</span>
+                                    </div>
+
+                                    <p>Descripción del álbum pendiente.</p>
+
+                                    <a href="album.html?album=melodramatica"
+                                        class="btn btn-outline-light">
+                                        Explorar álbum
+                                    </a>
+                                </div>
+
+                            </article>
+                        </div>
+
+                        <!-- Album 2 -->
+                        <div class="carousel-item">
+                            <article class="fichaAlbum">
+
+                                <div class="portadaVinilo">
+                                    <img src="assets/Albunes/Serbia/NoEsQueNoTeQuieraPero.webp"
+                                        alt="Portada del Album No Es Que No Te Quiera Pero... de Serbia"
+                                        class="portadaAlbum">
+                                </div>
+
+                                <div class="informacionAlbum">
+                                    <p class="etiquetaSeccion">Álbum seleccionado</p>
+                                    <h3>No Es Que No Te Quiera Pero...</h3>
+
+                                    <div class="datosAlbum">
+                                        <span>Serbia</span>
+                                        <span>Año de lanzamiento</span>
+                                    </div>
+
+                                    <p>Descripción del álbum pendiente.</p>
+
+                                    <a href="album.html?album=no-es-que-no-te-quiera-pero"
+                                        class="btn btn-outline-light">
+                                        Explorar álbum
+                                    </a>
+                                </div>
+
+                            </article>
+                        </div>
+
+                    </div>
+
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carruselSerbia"
+                        data-bs-slide="prev"
+                        aria-label="Álbum anterior de Serbia"
+                    >
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carruselSerbia"
+                        data-bs-slide="next"
+                        aria-label="Siguiente álbum de Serbia"
+                    >
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+
+                </div>
+
+            </section>
+
+            <!-- COLECCIÓN DE ASES FALSOS -->
+            <section
+                class="coleccionBanda container py-4"
+                id="coleccionAsesFalsos"
+            >
+
+                <div class="encabezadoColeccion">
+                    <p class="etiquetaSeccion">Colección 04</p>
+                    <h2>Ases Falsos</h2>
+                </div>
+
+                <div
+                    id="carruselAsesFalsos"
+                    class="carousel slide"
+                    data-bs-interval="false"
+                >
+
+                    <div class="carousel-inner">
+
+                        <!-- Album 1 -->
+                        <div class="carousel-item active">
+                            <article class="fichaAlbum">
+
+                                <div class="portadaVinilo">
+                                    <img src="assets/Albunes/AsesFalsos/JuventudAmericana.webp"
+                                        alt="Portada del Album Juventud americana de Ases Falsos"
+                                        class="portadaAlbum">
+                                </div>
+
+                                <div class="informacionAlbum">
+                                    <p class="etiquetaSeccion">Álbum seleccionado</p>
+                                    <h3>Juventud americana</h3>
+
+                                    <div class="datosAlbum">
+                                        <span>Ases Falsos</span>
+                                        <span>Año de lanzamiento</span>
+                                    </div>
+
+                                    <p>Descripción del álbum pendiente.</p>
+
+                                    <a href="album.html?album=juventud-americana"
+                                        class="btn btn-outline-light">
+                                        Explorar álbum
+                                    </a>
+                                </div>
+
+                            </article>
+                        </div>
+
+                        <!-- Album 2 -->
+                        <div class="carousel-item">
+                            <article class="fichaAlbum">
+
+                                <div class="portadaVinilo">
+                                    <img src="assets/Albunes/AsesFalsos/Conduccion.webp"
+                                        alt="Portada del Album Conduccion de Ases Falsos"
+                                        class="portadaAlbum">
+                                </div>
+
+                                <div class="informacionAlbum">
+                                    <p class="etiquetaSeccion">Álbum seleccionado</p>
+                                    <h3>Conduccion</h3>
+
+                                    <div class="datosAlbum">
+                                        <span>Ases Falsos</span>
+                                        <span>Año de lanzamiento</span>
+                                    </div>
+
+                                    <p>Descripción del álbum pendiente.</p>
+
+                                    <a href="album.html?album=Conduccion"
+                                        class="btn btn-outline-light">
+                                        Explorar álbum
+                                    </a>
+                                </div>
+
+                            </article>
+                        </div>
+
+                        <!-- Album 3 -->
+                        <div class="carousel-item">
+                            <article class="fichaAlbum">
+
+                                <div class="portadaVinilo">
+                                    <img src="assets/Albunes/AsesFalsos/ElHombrePuede.webp"
+                                        alt="Portada del Album El hombre puede de Ases Falsos"
+                                        class="portadaAlbum">
+                                </div>
+
+                                <div class="informacionAlbum">
+                                    <p class="etiquetaSeccion">Álbum seleccionado</p>
+                                    <h3>El hombre puede</h3>
+
+                                    <div class="datosAlbum">
+                                        <span>Ases Falsos</span>
+                                        <span>Año de lanzamiento</span>
+                                    </div>
+
+                                    <p>Descripción del álbum pendiente.</p>
+
+                                    <a href="album.html?album=el-hombre-puede"
+                                        class="btn btn-outline-light">
+                                        Explorar álbum
+                                    </a>
+                                </div>
+
+                            </article>
+                        </div>
+
+                        <!-- Album 4 -->
+                        <div class="carousel-item">
+                            <article class="fichaAlbum">
+
+                                <div class="portadaVinilo">
+                                    <img src="assets/Albunes/AsesFalsos/MalaFama.webp"
+                                        alt="Portada del Album Mala Fama de Ases Falsos"
+                                        class="portadaAlbum">
+                                </div>
+
+                                <div class="informacionAlbum">
+                                    <p class="etiquetaSeccion">Álbum seleccionado</p>
+                                    <h3>Mala Fama</h3>
+
+                                    <div class="datosAlbum">
+                                        <span>Ases Falsos</span>
+                                        <span>Año de lanzamiento</span>
+                                    </div>
+
+                                    <p>Descripción del álbum pendiente.</p>
+
+                                    <a href="album.html?album=mala-fama"
+                                        class="btn btn-outline-light">
+                                        Explorar álbum
+                                    </a>
+                                </div>
+
+                            </article>
+                        </div>
+
+                        <!-- Album 5 -->
+                        <div class="carousel-item">
+                            <article class="fichaAlbum">
+
+                                <div class="portadaVinilo">
+                                    <img src="assets/Albunes/AsesFalsos/Chocadito.webp"
+                                        alt="Portada del Album Chocadito de Ases Falsos"
+                                        class="portadaAlbum">
+                                </div>
+
+                                <div class="informacionAlbum">
+                                    <p class="etiquetaSeccion">Álbum seleccionado</p>
+                                    <h3>Chocadito</h3>
+
+                                    <div class="datosAlbum">
+                                        <span>Ases Falsos</span>
+                                        <span>Año de lanzamiento</span>
+                                    </div>
+
+                                    <p>Descripción del álbum pendiente.</p>
+
+                                    <a href="album.html?album=Chocadito"
+                                        class="btn btn-outline-light">
+                                        Explorar álbum
+                                    </a>
+                                </div>
+
+                            </article>
+                        </div>
+
+                        <!-- Album 6 -->
+                        <div class="carousel-item">
+                            <article class="fichaAlbum">
+
+                                <div class="portadaVinilo">
+                                    <img src="assets/Albunes/AsesFalsos/Tacto.webp"
+                                        alt="Portada del Album Tacto de Ases Falsos"
+                                        class="portadaAlbum">
+                                </div>
+
+                                <div class="informacionAlbum">
+                                    <p class="etiquetaSeccion">Álbum seleccionado</p>
+                                    <h3>Tacto</h3>
+
+                                    <div class="datosAlbum">
+                                        <span>Ases Falsos</span>
+                                        <span>Año de lanzamiento</span>
+                                    </div>
+
+                                    <p>Descripción del álbum pendiente.</p>
+
+                                    <a href="album.html?album=tacto"
+                                        class="btn btn-outline-light">
+                                        Explorar álbum
+                                    </a>
+                                </div>
+
+                            </article>
+                        </div>
+
+                    </div>
+
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carruselAsesFalsos"
+                        data-bs-slide="prev"
+                        aria-label="Álbum anterior de Ases Falsos"
+                    >
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carruselAsesFalsos"
+                        data-bs-slide="next"
+                        aria-label="Siguiente álbum de Ases Falsos"
+                    >
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+
+                </div>
+
+            </section>
+
+            <!-- COLECCIÓN DE LOS MESONEROS -->
+            <section
+                class="coleccionBanda container py-4"
+                id="coleccionLosMesoneros"
+            >
+
+                <div class="encabezadoColeccion">
+                    <p class="etiquetaSeccion">Colección 05</p>
+                    <h2>Los Mesoneros</h2>
+                </div>
+
+                <div
+                    id="carruselLosMesoneros"
+                    class="carousel slide"
+                    data-bs-interval="false"
+                >
+
+                    <div class="carousel-inner">
+
+                        <!-- Album 1 -->
+                        <div class="carousel-item active">
+                            <article class="fichaAlbum">
+
+                                <div class="portadaVinilo">
+                                    <img src="assets/Albunes/LosMesoneros/Indeleble.webp"
+                                        alt="Portada del Album Indeleble de Los Mesoneros"
+                                    >
+                                </div>
+
+                                <div class="informacionAlbum">
+                                    <p class="etiquetaSeccion">Álbum seleccionado</p>
+                                    <h3>Indeleble</h3>
+
+                                    <div class="datosAlbum">
+                                        <span>Los Mesoneros</span>
+                                        <span>Año de lanzamiento</span>
+                                    </div>
+
+                                    <p>Descripción del álbum pendiente.</p>
+
+                                    <a href="album.html?album=indeleble"
+                                        class="btn btn-outline-light">
+                                        Explorar álbum
+                                    </a>
+                                </div>
+
+                            </article>
+                        </div>
+
+                        <!-- Album 2 -->
+                        <div class="carousel-item">
+                            <article class="fichaAlbum">
+
+                                <div class="portadaVinilo">
+                                    <img src="assets/Albunes/LosMesoneros/CaigalLaNoche.webp"
+                                        alt="Portada del Album Caiga la Noche de Los Mesoneros"
+                                    >
+                                </div>
+
+                                <div class="informacionAlbum">
+                                    <p class="etiquetaSeccion">Álbum seleccionado</p>
+                                    <h3>Caiga la Noche</h3>
+
+                                    <div class="datosAlbum">
+                                        <span>Los Mesoneros</span>
+                                        <span>Año de lanzamiento</span>
+                                    </div>
+
+                                    <p>Descripción del álbum pendiente.</p>
+
+                                    <a href="album.html?album=caiga-la-noche"
+                                        class="btn btn-outline-light">
+                                        Explorar álbum
+                                    </a>
+                                </div>
+
+                            </article>
+                        </div>
+
+                        <!-- Album 3 -->
+                        <div class="carousel-item">
+                            <article class="fichaAlbum">
+
+                                <div class="portadaVinilo">
+                                    <img src="assets/Albunes/LosMesoneros/pangea.webp"
+                                        alt="Portada del Album Pangea de Los Mesoneros"
+                                    >
+                                </div>
+
+                                <div class="informacionAlbum">
+                                    <p class="etiquetaSeccion">Álbum seleccionado</p>
+                                    <h3>Pangea</h3>
+
+                                    <div class="datosAlbum">
+                                        <span>Los Mesoneros</span>
+                                        <span>Año de lanzamiento</span>
+                                    </div>
+
+                                    <p>Descripción del álbum pendiente.</p>
+
+                                    <a href="album.html?album=pangea"
+                                        class="btn btn-outline-light">
+                                        Explorar álbum
+                                    </a>
+                                </div>
+
+                            </article>
+                        </div>
+
+                        <!-- Album 4 -->
+                        <div class="carousel-item">
+                            <article class="fichaAlbum">
+
+                                <div class="portadaVinilo">
+                                    <img src="assets/Albunes/LosMesoneros/NuestroAño.webp"
+                                        alt="Portada del Album Nuestro año de Los Mesoneros"
+                                    >
+                                </div>
+
+                                <div class="informacionAlbum">
+                                    <p class="etiquetaSeccion">Álbum seleccionado</p>
+                                    <h3>Nuestro Año</h3>
+
+                                    <div class="datosAlbum">
+                                        <span>Los Mesoneros</span>
+                                        <span>Año de lanzamiento</span>
+                                    </div>
+
+                                    <p>Descripción del álbum pendiente.</p>
+
+                                    <a href="album.html?album=nuestro-año"
+                                        class="btn btn-outline-light">
+                                        Explorar álbum
+                                    </a>
+                                </div>
+
+                            </article>
+                        </div>
+
+                        <!-- Album 5 -->
+                        <div class="carousel-item">
+                            <article class="fichaAlbum">
+
+                                <div class="portadaVinilo">
+                                    <img src="assets/Albunes/LosMesoneros/EsoQueNosTrajoAAbbeyRoad.webp"
+                                        alt="Portada del Album Eso que nos trajo a Abbey Road de Los Mesoneros"
+                                    >
+                                </div>
+
+                                <div class="informacionAlbum">
+                                    <p class="etiquetaSeccion">Álbum seleccionado</p>
+                                    <h3>Eso que nos trajo a Abbey Road</h3>
+
+                                    <div class="datosAlbum">
+                                        <span>Los Mesoneros</span>
+                                        <span>Año de lanzamiento</span>
+                                    </div>
+
+                                    <p>Descripción del álbum pendiente.</p>
+
+                                    <a href="album.html?album=eso-que-nos-trajo-a-abbey-road"
+                                        class="btn btn-outline-light">
+                                        Explorar álbum
+                                    </a>
+                                </div>
+
+                            </article>
+                        </div>
+
+                    </div>
+
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carruselLosMesoneros"
+                        data-bs-slide="prev"
+                        aria-label="Álbum anterior de Los Mesoneros"
+                    >
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carruselLosMesoneros"
+                        data-bs-slide="next"
+                        aria-label="Siguiente álbum de Los Mesoneros"
+                    >
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+
+                </div>
+
             </section>
 
         </main>
 
-        <footer>
+
+        <!-- Pie de página -->
+        <footer class="footer">
             <div class="container py-4">
-                <p>&copy; 2026 Lado B. Un espacio para descubrir música.</p>
+                <p class="mb-0">
+                    Lado B — Un espacio para descubrir música fuera del radar.
+                </p>
             </div>
         </footer>
 
+
+        <!-- Bootstrap JavaScript -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
     </body>
