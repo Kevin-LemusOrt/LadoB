@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        <link href="css/recomendar.css" rel="stylesheet">
     </head>
     <body>
 
@@ -33,16 +34,14 @@
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                                     <li class="nav-item">
-                                        <a class="nav-link active"
-                                            aria-current="page"
-                                            href="index.html">
+                                        <a class="nav-link" href="index.html">
                                             Inicio
                                         </a>
                                     </li>
 
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle"
-                                            href="#"
+                                            href="banda.html"
                                             role="button"
                                             data-bs-toggle="dropdown"
                                             aria-expanded="false">
@@ -70,7 +69,7 @@
 
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle"
-                                            href="#"
+                                            href="albumes.html"
                                             role="button"
                                             data-bs-toggle="dropdown"
                                             aria-expanded="false">
@@ -82,13 +81,27 @@
                                                 <a class="dropdown-item" href="albumes.html">Catálogo de álbumes</a>
                                             </li>
                                             <li>
-                                                <a class="dropdown-item" href="albumes.html#destacados">Álbumes destacados</a>
+                                                <a class="dropdown-item" href="albumes.html#coleccionOdisseo">Odisseo</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="albumes.html#coleccionMeltt">Meltt</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="albumes.html#coleccionSerbia">Serbia</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="albumes.html#coleccionAsesFalsos">Ases Falsos</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="albumes.html#coleccionLosMesoneros">Los Mesoneros</a>
                                             </li>
                                         </ul>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="recomendar.html">
+                                        <a class="nav-link active"
+                                            href="recomendar.html"
+                                            aria-current="page">
                                             Sugerencias
                                         </a>
                                     </li>
@@ -100,46 +113,144 @@
                     </nav>
                 </div>
 
-                <div class="divAlgo">
-
-                </div>
-
             </div>
+
         </header>
 
-        <main class="main">
+        <main class="container py-5">
+    <section id="introduccionRecomendaciones" class="mb-4">
+        <span class="etiquetaSeccion">LADO B / PARTICIPA</span>
 
-            <section id="presentacion">
-                <div class="container py-5">
-                    <h1>Lado B</h1>
-                    <p>
-                        Un espacio dedicado a descubrir música alternativa,
-                        explorar bandas y conocer las historias detrás de sus álbumes.
-                    </p>
+        <h1 class="mt-3">Ayúdanos a descubrir algo nuevo.</h1>
+
+        <p class="textoIntroduccion">
+            ¿Conoces una banda que merece más reconocimiento o un
+            álbum que no podemos dejar pasar? Cuéntanos qué escuchas
+            y por qué vale la pena descubrirlo.
+        </p>
+    </section>
+
+    <section class="contenedorFormulario">
+        <div class="encabezadoFormulario mb-4">
+            <h2>Deja tu recomendación</h2>
+            <p>Las mejores recomendaciones empiezan con alguien que las comparte.</p>
+        </div>
+
+        <form id="formularioRecomendacion"
+              class="needs-validation"
+              novalidate>
+
+            <!-- Nombre opcional -->
+            <div class="form-floating mb-3">
+                <input type="text"
+                       class="form-control"
+                       id="nombre"
+                       name="nombre"
+                       placeholder="Tu nombre"
+                       maxlength="60">
+
+                <label for="nombre">Tu nombre (opcional)</label>
+            </div>
+
+            <!-- Tipo de recomendación -->
+            <div class="form-floating mb-3">
+                <select class="form-select"
+                        id="tipo"
+                        name="tipo"
+                        required>
+                    <option value="" selected disabled>Selecciona una opción</option>
+                    <option value="banda">Banda o artista</option>
+                    <option value="album">Álbum</option>
+                    <option value="cancion">Canción</option>
+                </select>
+
+                <label for="tipo">¿Qué quieres recomendar?</label>
+
+                <div class="invalid-feedback">
+                    Selecciona qué tipo de recomendación quieres compartir.
                 </div>
-            </section>
+            </div>
 
-            <section id="bandas">
-                <div class="container py-4">
-                    <h2>Explora las bandas</h2>
-                    <p>
-                        Conoce sus historias, su evolución musical y sus discos más representativos.
-                    </p>
+            <!-- Artista -->
+            <div class="form-floating mb-3">
+                <input type="text"
+                       class="form-control"
+                       id="artista"
+                       name="artista"
+                       placeholder="Nombre de la banda o artista"
+                       minlength="2"
+                       maxlength="100"
+                       required>
 
+                <label for="artista">Banda o artista</label>
+
+                <div class="invalid-feedback">
+                    Escribe el nombre de la banda o artista (mínimo 2 caracteres).
                 </div>
-            </section>
+            </div>
 
-            <section id="albumesDestacados">
-                <div class="container py-4">
-                    <h2>Álbumes destacados</h2>
-                    <p>
-                        Descubre álbumes que merecen una escucha y conoce qué hay detrás de ellos.
-                    </p>
+            <!-- Álbum o canción -->
+            <div class="form-floating mb-3">
+                <input type="text"
+                       class="form-control"
+                       id="obra"
+                       name="obra"
+                       placeholder="Álbum o canción"
+                       maxlength="120">
 
+                <label for="obra">Álbum o canción (opcional)</label>
+            </div>
+
+            <!-- Correo opcional -->
+            <div class="form-floating mb-3">
+                <input type="email"
+                       class="form-control"
+                       id="correo"
+                       name="correo"
+                       placeholder="correo@ejemplo.com"
+                       maxlength="254">
+
+                <label for="correo">Correo electrónico (opcional)</label>
+
+                <div class="invalid-feedback">
+                    Escribe una dirección de correo válida.
                 </div>
-            </section>
+            </div>
 
-        </main>
+            <!-- Motivo -->
+            <div class="form-floating mb-3">
+                <textarea class="form-control campoMotivo"
+                          id="motivo"
+                          name="motivo"
+                          placeholder="Cuéntanos por qué lo recomiendas"
+                          minlength="10"
+                          maxlength="600"
+                          required></textarea>
+
+                <label for="motivo">¿Por qué lo recomiendas?</label>
+
+                <div class="invalid-feedback">
+                    Cuéntanos un poco más (mínimo 10 caracteres).
+                </div>
+            </div>
+
+            <p class="notaFormulario">
+                * Los campos de tipo, artista y motivo son obligatorios.
+            </p>
+
+            <button type="submit" class="btn btn-ladob botonEnviar">
+                Enviar recomendación ↗
+            </button>
+
+            <div id="mensajeFormulario"
+                 class="mensajeFormulario mt-3"
+                 role="status"
+                 aria-live="polite"
+                 hidden></div>
+        </form>
+    </section>
+</main>
+
 
         <footer>
             <div class="container py-4">
@@ -148,6 +259,7 @@
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/validacion.js"></script>
 
     </body>
 </html>

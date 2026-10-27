@@ -1,0 +1,121 @@
+/* LADO B — FORMULARIO DE RECOMENDACIONES */
+
+#introduccionRecomendaciones {
+    max-width: 760px;
+}
+
+#introduccionRecomendaciones h1 {
+    max-width: 650px;
+}
+
+.textoIntroduccion {
+    max-width: 650px;
+    font-size: 1.05rem;
+}
+
+.contenedorFormulario {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--color-superficie);
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio-tarjeta);
+}
+
+.encabezadoFormulario {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-borde);
+}
+
+.encabezadoFormulario h2 {
+    font-size: 1.5rem;
+}
+
+.encabezadoFormulario p {
+    margin-bottom: 0;
+}
+
+/* Campos */
+#formularioRecomendacion .form-control,
+#formularioRecomendacion .form-select {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    border: 1px solid var(--color-borde);
+    border-radius: 6px;
+}
+
+/* Etiquetas flotantes */
+#formularioRecomendacion .form-floating > label {
+    color: var(--color-texto-secundario);
+}
+
+/* Color del texto de las opciones del selector */
+#formularioRecomendacion .form-select option {
+    background-color: var(--color-superficie);
+    color: var(--color-texto);
+}
+
+/* Foco */
+#formularioRecomendacion .form-control:focus,
+#formularioRecomendacion .form-select:focus {
+    border-color: var(--color-verde);
+    box-shadow: 0 0 0 0.2rem rgb(184 255 59 / 15%);
+}
+
+/* Área de texto */
+#formularioRecomendacion .campoMotivo {
+    min-height: 160px;
+    resize: vertical;
+}
+
+/* Validaciones */
+#formularioRecomendacion .invalid-feedback {
+    color: #ff8585;
+}
+
+#formularioRecomendacion.was-validated .form-control:invalid,
+#formularioRecomendacion.was-validated .form-select:invalid {
+    border-color: #ff8585;
+}
+
+#formularioRecomendacion.was-validated .form-control:valid,
+#formularioRecomendacion.was-validated .form-select:valid {
+    border-color: var(--color-verde);
+}
+
+/* Nota y botón */
+.notaFormulario {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+}
+
+.botonEnviar {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    font-weight: 700;
+}
+
+.mensajeFormulario {
+    padding: 1rem;
+    border: 1px solid var(--color-borde);
+    border-radius: 6px;
+}
+
+.mensajeFormulario.exito {
+    color: var(--color-verde);
+}
+
+.mensajeFormulario.error {
+    color: #ff8585;
+}
+
+/* Móviles */
+@media (max-width: 576px) {
+    #introduccionRecomendaciones {
+        padding-top: 1rem;
+    }
+
+    .contenedorFormulario {
+        padding: 1.25rem;
+    }
+}
