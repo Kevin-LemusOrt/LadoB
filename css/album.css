@@ -1,0 +1,248 @@
+/* LADO B — FICHA DEL ÁLBUM */
+
+/* =========================================
+   1. ENCABEZADO DE LA BANDA
+========================================= */
+
+#encabezadoBanda {
+    border-bottom: 1px solid var(--color-borde);
+    background-color: var(--color-fondo);
+}
+
+.contenedorImagenBanda {
+    width: 100%;
+    height: clamp(220px, 35vw, 420px);
+    overflow: hidden;
+    background-color: var(--color-superficie);
+}
+
+.contenedorImagenBanda img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#encabezadoBanda .container {
+    max-width: 1100px;
+}
+
+#nombreBanda {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+}
+
+#descripcionBanda {
+    max-width: 720px;
+    margin-bottom: 1rem;
+}
+
+#enlaceBanda {
+    display: inline-block;
+    color: var(--color-verde);
+    font-weight: 700;
+}
+
+#enlaceBanda:hover {
+    color: var(--color-texto);
+}
+
+
+/* =========================================
+   2. PRESENTACIÓN DEL ÁLBUM
+========================================= */
+
+#presentacionAlbum {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#presentacionAlbum .row {
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#portadaAlbum {
+    display: block;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: var(--radio-tarjeta);
+    box-shadow: 0 12px 30px #0005;
+}
+
+#nombreAlbum {
+    margin-bottom: 0.75rem;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+}
+
+#artistaAlbum {
+    margin-bottom: 1.5rem;
+    color: var(--color-verde);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+#datosAlbum {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem 0;
+    border-top: 1px solid var(--color-borde);
+    border-bottom: 1px solid var(--color-borde);
+}
+
+#datosAlbum p {
+    margin-bottom: 0.25rem;
+}
+
+#datosAlbum strong {
+    color: var(--color-texto);
+}
+
+#descripcionAlbum {
+    max-width: 650px;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   3. SECCIONES DE CONTENIDO
+========================================= */
+
+#historiaAlbum,
+#cancionesAlbum,
+#escuchaAlbum {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+#historiaAlbum .container,
+#cancionesAlbum .container,
+#escuchaAlbum .container {
+    max-width: 1000px;
+}
+
+#historiaAlbum h2,
+#cancionesAlbum h2,
+#escuchaAlbum h2 {
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--color-borde);
+    font-size: 1.6rem;
+}
+
+#contenidoHistoriaAlbum {
+    max-width: 800px;
+    line-height: 1.9;
+}
+
+
+/* =========================================
+   4. LISTA DE CANCIONES
+========================================= */
+
+#listaCanciones {
+    gap: 0.5rem;
+    padding-left: 0;
+}
+
+#listaCanciones .list-group-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    background-color: var(--color-superficie);
+    color: var(--color-texto);
+    border: 1px solid var(--color-borde);
+    border-radius: 6px;
+    transition:
+        border-color var(--transicion),
+        background-color var(--transicion);
+}
+
+#listaCanciones .list-group-item:hover {
+    background-color: #323232;
+    border-color: var(--color-verde);
+}
+
+.numeroCancion {
+    color: var(--color-texto-secundario);
+    margin-right: 0.75rem;
+    font-variant-numeric: tabular-nums;
+}
+
+
+/* =========================================
+   5. REPRODUCTOR
+========================================= */
+
+#reproductorAlbum {
+    width: 100%;
+    overflow: hidden;
+    border-radius: var(--radio-tarjeta);
+}
+
+#reproductorAlbum iframe {
+    display: block;
+    width: 100%;
+    min-height: 200px;
+    border: 0;
+}
+
+
+/* =========================================
+   6. ESTADO DE ÁLBUM NO ENCONTRADO
+========================================= */
+
+#estadoAlbum {
+    max-width: 900px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#estadoAlbum h2 {
+    margin-bottom: 1rem;
+}
+
+
+/* =========================================
+   7. DISEÑO RESPONSIVO
+========================================= */
+
+@media (max-width: 767px) {
+
+    .contenedorImagenBanda {
+        height: 240px;
+    }
+
+    #presentacionAlbum {
+        padding-top: 0;
+    }
+
+    #portadaAlbum {
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    #datosAlbum {
+        gap: 0.5rem 1rem;
+    }
+
+    #historiaAlbum,
+    #cancionesAlbum,
+    #escuchaAlbum {
+        padding-bottom: 1.5rem;
+    }
+
+    #listaCanciones .list-group-item {
+        padding: 0.85rem;
+    }
+}
