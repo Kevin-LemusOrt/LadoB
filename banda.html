@@ -14,130 +14,292 @@
 
                 <div class="divNav">
                     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                        <div class="container-fluid">
+                <div class="container-fluid">
 
-                            <a class="navbar-brand" href="index.html">Lado B</a>
+                    <a class="navbar-brand" href="index.html">Lado B</a>
 
-                            <button class="navbar-toggler" type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#menuPrincipal"
-                                aria-controls="menuPrincipal"
-                                aria-expanded="false"
-                                aria-label="Abrir navegación">
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#menuPrincipal"
+                        aria-controls="menuPrincipal"
+                        aria-expanded="false"
+                        aria-label="Abrir navegación">
 
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                            <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <div class="collapse navbar-collapse" id="menuPrincipal">
 
-                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                                    <li class="nav-item">
-                                        <a class="nav-link active"
-                                            aria-current="page"
-                                            href="index.html">
-                                            Inicio
-                                        </a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">
+                                    Inicio
+                                </a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active"
+                                    href="banda.html"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                    aria-current="page">
+                                    Bandas
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="banda.html?banda=serbia">Serbia</a>
                                     </li>
-
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle"
-                                            href="banda.html"
-                                            role="button"
-                                            data-bs-toggle="dropdown"
-                                            aria-expanded="false">
-                                            Bandas
-                                        </a>
-
-                                        <ul class="dropdown-menu">
-                                            <li>
-                                                <a class="dropdown-item" href="banda.html?banda=serbia">Serbia</a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="banda.html?banda=odisseo">Odisseo</a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="banda.html?banda=meltt">Meltt</a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="banda.html?banda=ases-falsos">Ases Falsos</a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="banda.html?banda=los-mesoneros">Los Mesoneros</a>
-                                            </li>
-                                        </ul>
+                                    <li>
+                                        <a class="dropdown-item" href="banda.html?banda=odisseo">Odisseo</a>
                                     </li>
-
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle"
-                                            href="albumes.html"
-                                            role="button"
-                                            data-bs-toggle="dropdown"
-                                            aria-expanded="false">
-                                            Álbumes
-                                        </a>
-
-                                        <ul class="dropdown-menu">
-                                            <li>
-                                                <a class="dropdown-item" href="albumes.html">Catálogo de álbumes</a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="albumes.html#destacados">Álbumes destacados</a>
-                                            </li>
-                                        </ul>
+                                    <li>
+                                        <a class="dropdown-item" href="banda.html?banda=meltt">Meltt</a>
                                     </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="recomendar.html">
-                                            Sugerencias
-                                        </a>
+                                    <li>
+                                        <a class="dropdown-item" href="banda.html?banda=ases-falsos">Ases Falsos</a>
                                     </li>
-
+                                    <li>
+                                        <a class="dropdown-item" href="banda.html?banda=los-mesoneros">Los Mesoneros</a>
+                                    </li>
                                 </ul>
+                            </li>
 
-                            </div>
-                        </div>
-                    </nav>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle"
+                                    href="albumes.html"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Álbumes
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="albumes.html">Catálogo de álbumes</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="albumes.html#coleccionOdisseo">Odisseo</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="albumes.html#coleccionMeltt">Meltt</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="albumes.html#coleccionSerbia">Serbia</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="albumes.html#coleccionAsesFalsos">Ases Falsos</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="albumes.html#coleccionLosMesoneros">Los Mesoneros</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="recomendar.html">
+                                    Sugerencias
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
                 </div>
-
-                <div class="divAlgo">
-
-                </div>
+            </nav>
 
             </div>
         </header>
 
         <main class="main">
 
-            <section id="presentacion">
-                <div class="container py-5">
-                    <h1>Lado B</h1>
-                    <p>
-                        Un espacio dedicado a descubrir música alternativa,
-                        explorar bandas y conocer las historias detrás de sus álbumes.
-                    </p>
-                </div>
-            </section>
+            <!-- Odisseo -->
+<section class="banda-card container my-5">
+    <div class="row align-items-center g-4">
 
-            <section id="bandas">
-                <div class="container py-4">
-                    <h2>Explora las bandas</h2>
-                    <p>
-                        Conoce sus historias, su evolución musical y sus discos más representativos.
-                    </p>
+        <div class="col-12 col-md-6">
+            <img
+                src="assets/Odisseo.webp"
+                alt="Integrantes de Odisseo"
+                class="img-fluid rounded"
+            >
+        </div>
 
-                </div>
-            </section>
+        <!-- Información -->
+        <div class="col-12 col-md-6">
+            <p class="etiquetaSeccion">Rock alternativo</p>
+            <h2>Odisseo</h2>
 
-            <section id="albumesDestacados">
-                <div class="container py-4">
-                    <h2>Álbumes destacados</h2>
-                    <p>
-                        Descubre álbumes que merecen una escucha y conoce qué hay detrás de ellos.
-                    </p>
+            <p>
+                Aquí irá una descripción breve de la banda,
+                su sonido y su trayectoria.
+            </p>
 
-                </div>
-            </section>
+            <p><strong>Formación:</strong> año por investigar</p>
+            <p><strong>Origen:</strong> lugar por investigar</p>
+
+            <h3>Discografía destacada</h3>
+            <ul>
+                <li>Sí, Yo Soy</li>
+                <li>Días de Fuego</li>
+                <li>Cambio Estacional</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+            <!-- Meltt -->
+<section class="banda-card container my-5">
+    <div class="row align-items-center g-4">
+
+        <!-- Imagen -->
+        <div class="col-12 col-md-6 order-md-2">
+            <img
+                src="assets/Meltt.webp"
+                alt="Integrantes de Odisseo"
+                class="img-fluid rounded"
+            >
+        </div>
+
+        <!-- Información -->
+        <div class="col-12 col-md-6 order-md-1">
+            <p class="etiquetaSeccion">Dream core</p>
+            <h2>Meltt</h2>
+
+            <p>
+                Aquí irá una descripción breve de la banda,
+                su sonido y su trayectoria.
+            </p>
+
+            <p><strong>Formación:</strong> año por investigar</p>
+            <p><strong>Origen:</strong> lugar por investigar</p>
+
+            <h3>Discografía destacada</h3>
+            <ul>
+                <li>Sí, Yo Soy</li>
+                <li>Días de Fuego</li>
+                <li>Cambio Estacional</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+            <!-- Serbia -->
+<section class="banda-card container my-5">
+    <div class="row align-items-center g-4">
+
+        <!-- Imagen -->
+        <div class="col-12 col-md-6">
+            <img
+                src="assets/Serbia.webp"
+                alt="Integrantes de Odisseo"
+                class="img-fluid rounded"
+            >
+        </div>
+
+        <!-- Información -->
+        <div class="col-12 col-md-6">
+            <p class="etiquetaSeccion">Rock alternativo</p>
+            <h2>Odisseo</h2>
+
+            <p>
+                Aquí irá una descripción breve de la banda,
+                su sonido y su trayectoria.
+            </p>
+
+            <p><strong>Formación:</strong> año por investigar</p>
+            <p><strong>Origen:</strong> lugar por investigar</p>
+
+            <h3>Discografía destacada</h3>
+            <ul>
+                <li>Sí, Yo Soy</li>
+                <li>Días de Fuego</li>
+                <li>Cambio Estacional</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+            <!-- Ases Falsos -->
+<section class="banda-card container my-5">
+    <div class="row align-items-center g-4">
+
+        <!-- Imagen -->
+        <div class="col-12 col-md-6 order-md-2">
+            <img
+                src="assets/AsesFalsos.webp"
+                alt="Integrantes de Odisseo"
+                class="img-fluid rounded"
+            >
+        </div>
+
+        <!-- Información -->
+        <div class="col-12 col-md-6 order-md-1">
+            <p class="etiquetaSeccion">Rock alternativo</p>
+            <h2>Odisseo</h2>
+
+            <p>
+                Aquí irá una descripción breve de la banda,
+                su sonido y su trayectoria.
+            </p>
+
+            <p><strong>Formación:</strong> año por investigar</p>
+            <p><strong>Origen:</strong> lugar por investigar</p>
+
+            <h3>Discografía destacada</h3>
+            <ul>
+                <li>Sí, Yo Soy</li>
+                <li>Días de Fuego</li>
+                <li>Cambio Estacional</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+            <!-- Los Mesoneros -->
+<section class="banda-card container my-5">
+    <div class="row align-items-center g-4">
+
+        <!-- Imagen -->
+        <div class="col-12 col-md-6">
+            <img
+                src="assets/LosMesoneros.webp"
+                alt="Integrantes de Odisseo"
+                class="img-fluid rounded"
+            >
+        </div>
+
+        <!-- Información -->
+        <div class="col-12 col-md-6">
+            <p class="etiquetaSeccion">Rock alternativo</p>
+            <h2>Odisseo</h2>
+
+            <p>
+                Aquí irá una descripción breve de la banda,
+                su sonido y su trayectoria.
+            </p>
+
+            <p><strong>Formación:</strong> año por investigar</p>
+            <p><strong>Origen:</strong> lugar por investigar</p>
+
+            <h3>Discografía destacada</h3>
+            <ul>
+                <li>Sí, Yo Soy</li>
+                <li>Días de Fuego</li>
+                <li>Cambio Estacional</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+
 
         </main>
 
