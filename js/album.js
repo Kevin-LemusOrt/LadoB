@@ -90,10 +90,7 @@ function crearAlbum(
         descripcion,
         historia,
 
-        canciones: canciones.map(nombre => ({
-            nombre,
-            duracion: ""
-        })),
+        canciones: canciones.map(nombre => ({ nombre })),
 
         cantidadCanciones:
             cantidad ?? (
@@ -894,7 +891,8 @@ function configurarImagen(imagen, ruta, descripcion) {
 
     imagen.onerror = () => {
         console.error(`No se pudo cargar la imagen: ${ruta}`);
-        imagen.hidden = true;
+        imagen.onerror = null;
+        imagen.src = "assets/logoTemp.webp";
     };
 
     imagen.src = ruta;
@@ -907,6 +905,11 @@ function configurarImagen(imagen, ruta, descripcion) {
 
 function mostrarBanda(album) {
     const banda = BANDAS[album.idBanda];
+
+    if (!banda) {
+        console.error(`Banda no encontrada: ${album.idBanda}`);
+        return;
+    }
 
     configurarImagen(
         elementos.imagenBanda,
@@ -999,17 +1002,16 @@ function mostrarCanciones(album) {
         return;
     }
 
-    album.canciones.forEach((cancion, indice) => {
+    album.canciones.forEach((cancion) => {
         const elemento = document.createElement("li");
 
         elemento.classList.add("list-group-item");
 
         const informacion = document.createElement("span");
-        
         informacion.textContent = cancion.nombre;
 
         elemento.appendChild(informacion);
-        lista.appendChild(elemento)
+        lista.appendChild(elemento);
     });
 
     if (album.notaCanciones) {
